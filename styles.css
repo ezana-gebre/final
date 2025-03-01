@@ -549,7 +549,7 @@ nav {
     .charity-note {
       margin-top: 5rem;
       font-size: 1.1rem;
-      
+      justify-self: center;
       color: #666;
     }
     
@@ -564,5 +564,7 @@ nav {
         max-width: 100%;
         margin-bottom: 20px;
       }
+      
+      
     }
 
