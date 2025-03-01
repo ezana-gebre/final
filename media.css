@@ -50,7 +50,9 @@
         padding: 0.5rem 1rem;
         border-top: 1px solid #ddd;
         margin-bottom: 2.4rem;
+
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -87,6 +89,7 @@
       padding: 1.2rem 1.5rem;
       font-size: 1.1rem;
     }
+    
   }
 
 
@@ -103,6 +106,7 @@
     .logo-grid img {
       height: 60px;
     }
+    
   }
   
   @media (max-width: 480px) {
@@ -122,6 +126,7 @@
       height: 50px;
       min-width: 60px;
     }
+    
   }
   
 
