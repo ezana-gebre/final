@@ -1,0 +1,128 @@
+/* Main Responsive Breakpoints */
+@media (min-width: 1025px) {
+    .menu {
+        display: flex; /* Show menu on larger screens */
+    }
+
+    .hamburger {
+        display: none; /* Hide hamburger on larger screens */
+    }
+}
+
+@media (max-width: 1024px) {
+    .menu {
+        display: none; /* Hide menu on smaller screens */
+        flex-direction: column;
+        order: 3;
+        width: 100%;
+        margin-top: 1rem;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background: white;
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger on smaller screens */
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    nav {
+        padding-right: 5%;
+    }
+
+    .logo {
+        margin-left: 10px;
+    }
+
+    .logo img {
+        height: 30px; /* Adjusted logo size for mobile */
+    }
+
+    .setup-button {
+        order: 1;
+        margin-top: auto;
+        text-align: center;
+        width: auto;
+        padding: 0.5rem 1rem;
+        border-top: 1px solid #ddd;
+        margin-bottom: 2.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        margin-left: 5px;
+    }
+
+    nav {
+        padding-right: 2%;
+    }
+}
+
+@media (max-width: 600px) {
+    .menu a {
+        padding: 1rem;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+}
+
+  /* Start of Responsive Hero Section */
+
+
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    .hero p {
+      font-size: 1rem;
+    }
+  
+    .cta-button {
+      padding: 1.2rem 1.5rem;
+      font-size: 1.1rem;
+    }
+  }
+
+
+  /* End of  of Responsive Hero Section */  
+
+
+  /* Responsive Bank logo grid */
+@media (max-width: 768px) {
+    .logo-grid {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+  
+    .logo-grid img {
+      height: 60px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .bank-grid {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+    .logo-grid {
+      grid-template-columns: repeat(4, 2fr);
+      gap: 1rem;
+      row-gap: 0.5rem;
+      
+      
+    }
+  
+    .logo-grid img {
+      height: 50px;
+      min-width: 60px;
+    }
+  }
+  
+
+

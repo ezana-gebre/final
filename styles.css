@@ -1,0 +1,568 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #ffffff;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+.logo img {
+    height: 40px;
+    width: auto;
+    max-width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15%;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+    z-index: 10; /* Brings the menu above other elements */
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    
+    
+}
+
+.hamburger img {
+    width: 30px;
+    height: 30px;
+}
+
+.menu a {
+    color: #333;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+    
+}
+
+.menu a:hover {
+    color: #000;
+}
+
+.setup-button {
+    background-color:  #007AFF; /* Blue */
+    color: white !important;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    
+}
+
+/* Hero Section */
+.hero {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-radius: 5px;
+    
+  }
+  
+  .hero-content {
+    max-width: 800px;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .cta-button {
+    background-color:  #007AFF; /* Blue */
+    color: white;
+    padding: 0.75rem 2rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #012f61; /* Darker blue on hover */
+  }
+
+
+    /* Bank Logo Grid */
+    
+.bank-grid {
+    padding: 4rem 2rem;
+    background: #ffffff;
+    text-align: center;
+    
+  }
+  .logo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .logo-grid img {
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    
+  }
+
+
+
+
+
+
+
+
+
+/* SEtup Direct Debit Section */
+
+.container {
+  background-color:#fdfdfd;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.setup-section {
+    background-color: #ffffff;
+    border: 1px solid rgb(255, 255, 255);
+    
+}
+
+.setup-content {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #f1f1f1;
+    
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    
+   
+}
+
+
+
+.setup-header {
+    
+    
+    justify-content: center;
+    font-family: sans-serif;
+    
+}.setup-header h1 {
+    justify-content: center;
+    display: flex;
+    color: #000000;
+    margin-bottom: 0.5rem;
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+    
+} 
+
+.setup-header p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    font-family: ;
+}
+
+
+.amounts {
+    border: 2px solid rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    gap: 1rem;
+    
+    
+
+      
+}
+
+.amounts button {
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(245, 245, 245);
+    border-radius: 5px;
+    color: rgb(43, 43, 43);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    min-width: 4rem;
+    height: 3rem;
+    
+}
+
+.amounts button:hover {
+    background-color: #007AFF;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.finish-button {
+    display: flex;
+    justify-content: center;
+}
+
+
+.finish-button button {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    cursor: pointer;
+    background-color: #007AFF;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 1rem;
+    width: 15rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    
+    
+    
+}
+
+.finish-button button:hover {
+    background-color: #012f61;
+    transition: 0.3s ease;
+}
+
+
+
+.FAQ {
+    
+    margin-top: 16rem;
+    
+}
+
+/* Start of FAQ Section */
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 300;
+    font-size: 32px;
+    color: #333;
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+  }
+  
+  .faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px 0;
+    background: none;
+    border: none;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .faq-question:hover {
+    color: #555;
+  }
+  
+  .faq-arrow {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  .faq-question.active .faq-arrow {
+    transform: rotate(180deg);
+  }
+  
+  .faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 0;
+  }
+  
+  .faq-answer.active {
+    max-height: 200px;
+    padding-bottom: 20px;
+  }
+
+
+  /* Media Queries */
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px 15px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 30px;
+    }
+    
+    .faq-question {
+      font-size: 16px;
+    }
+  }
+
+
+
+  .site-footer {
+    background-color: #ffffff;
+    border-top: 1px solid #eaeaea;
+    margin-top: 4rem;
+    padding: 2rem 0 0;
+    }
+    
+    .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    }
+    
+    .footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 2rem;
+    }
+
+    .footer-logo {
+      display: flex;
+      gap: 1rem;
+      width: 3rem;
+      height: 2rem;
+      
+    }    
+    
+    
+    .footer-column h4 {
+    font-size: 1.1rem;
+    margin-bottom: 1.2rem;
+    color: #333;
+    font-weight: 600;
+    }
+    
+    .footer-column ul {
+    list-style: none;
+    padding: 0;
+    }
+    
+    .footer-column li {
+    margin-bottom: 0.8rem;
+    }
+    
+    .footer-column a {
+    color: #666;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-size: 0.95rem;
+    }
+    
+    .footer-column a:hover {
+    color: #007AFF;
+    }
+    
+    .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    }
+    
+    .social-links img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    }
+    
+    .social-links img:hover {
+    opacity: 1;
+    }
+    
+    .footer-bottom {
+    border-top: 1px solid #eee;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    text-align: center;
+    }
+    
+    .footer-bottom p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+    }
+    
+    /* Existing media queries remain unchanged */
+    
+    /* ================= Footer Media Queries ================= */
+    @media (max-width: 768px) {
+    .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 1.5rem;
+    }
+    
+    .footer-column {
+    min-width: 100%;
+    text-align: center;
+    }
+    
+    .social-links {
+    justify-content: center;
+    }
+    
+    .footer-bottom {
+    padding: 1rem 0;
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .site-footer {
+    margin-top: 3rem;
+    }
+    
+    .footer-container {
+    padding: 0 1rem;
+    }
+    
+    .footer-column h4 {
+    font-size: 1rem;
+    }
+    
+    .footer-column a {
+    font-size: 0.9rem;
+    }
+    }
+    
+
+
+
+    .how-it-works {
+      background-color: #ffffff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    
+    .how-it-works h2 {
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #000000;
+    }
+    
+    .steps-container {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    
+    .step {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 200px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background-color: #ffffff;
+      box-shadow: rgba(233, 242, 250, 0.2) 0px 8px 24px;
+    }
+    
+    .step-icon {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    
+    .step-number {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #000000;
+    }
+    
+    .step p {
+      font-size: 1.2rem;
+      color: #333;
+    }
+    
+    .charity-note {
+      margin-top: 5rem;
+      font-size: 1.1rem;
+      
+      color: #666;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .steps-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    
+      .step {
+        max-width: 100%;
+        margin-bottom: 20px;
+      }
+    }
+
