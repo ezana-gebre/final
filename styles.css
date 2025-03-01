@@ -509,9 +509,12 @@ nav {
     }
     
     .how-it-works h2 {
-      font-size: 2.5rem;
-      margin-bottom: 30px;
-      color: #ffffff;
+    font-size: 2.5rem;
+    font-family: "Kanit", serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 30px;
+    color: #000000;
     }
     
     .steps-container {
