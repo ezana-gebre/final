@@ -3,6 +3,7 @@ html {
   }
 
 body {
+  overflow-x: hidden;
     background-color: #ffffff;
     font-family: 'Helvetica', Arial, sans-serif;
 }
@@ -159,17 +160,20 @@ nav {
   background-color:#fdfdfd;
   padding: 2rem;
   border-radius: 15px;
+  
 }
 
 .setup-section {
     background-color: #ffffff;
-    border: 1px solid rgb(255, 255, 255);
+    border: 1px solid #ffffff;
+    border-radius: 15px;
+    margin-top: 5rem;
     
 }
 
 .setup-content {
     background-color: rgb(255, 255, 255);
-    border: 1px solid #f1f1f1;
+    border: 5px solid #f8f8f8;
     
     border-radius: 15px;
     width: 100%;
@@ -275,7 +279,7 @@ nav {
 
 .FAQ {
     
-    margin-top: 16rem;
+    margin-top: 6rem;
     
 }
 
@@ -390,8 +394,8 @@ nav {
     .footer-logo {
       display: flex;
       gap: 1rem;
-      width: 3rem;
-      height: 2rem;
+      width: 2rem;
+      height: 1rem;
       
     }    
     
@@ -499,7 +503,7 @@ nav {
 
 
     .how-it-works {
-      background-color: #ffffff;
+      background-color: #000000;
       padding: 40px 20px;
       text-align: center;
     }
@@ -507,7 +511,7 @@ nav {
     .how-it-works h2 {
       font-size: 2.5rem;
       margin-bottom: 30px;
-      color: #000000;
+      color: #ffffff;
     }
     
     .steps-container {
@@ -550,6 +554,7 @@ nav {
       margin-top: 5rem;
       font-size: 1.1rem;
       justify-self: center;
+      text-align: center;
       color: #666;
     }
     

@@ -9,6 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,700;0,900;1,400&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
     <link rel="icon" href="/images/switch_Debit.com icon.png" type="image/png" alt = "Swithcdebit.com Logo">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="2styles.css">
     <link rel="stylesheet" href="media.css">
     
 </head>
@@ -21,11 +22,12 @@
             </a>
           </div>
           <div class="menu" id="menu">
-            <a href="#">Home</a>
-            <a href="#">How it works</a>
-            <a href="#">Setup</a>
-            <a href="#">FAQ</a>
-            <a href="#">Contact</a>
+            <a href="#hero-section">Home</a>
+            <a href="#how-it-works-section">How it works</a>
+            <a href="#setup-section">Setup</a>
+            <a href="#poll-section">Polls</a>
+            <a href="#faq-section">FAQ</a>
+            <a href="#contact-section">Contact</a>
             
           </div>
           <div class="hamburger" id="hamburger">
@@ -36,10 +38,10 @@
 
         <!-- Hero Section -->
 
-    <section class="hero">
+    <section class="hero" id="hero-section">
       <div class="hero-content">
         <h1>Fast, cheap direct debits in 2 minutes, perfect for bank switch bonuses!</h1>
-        <p>We gave away 100% of it to charity</p>
+        <p>We give away 100% of it to a UK based Gofundme campaign of your choice</p>
         <a href="#setup-section" class="cta-button">Setup Now</a>
       </div>
   </section>
@@ -70,28 +72,28 @@
 
 
 <!-- Start of  How it works section -->
-<section class="how-it-works">
+<section class="how-it-works" id="how-it-works-section">
   <h2>How It Works</h2>
   <div class="steps-container">
     <div class="step">
       <div class="step-icon">🖱️</div>
       <div class="step-number">1</div>
-      <p>Click the 'Setup' button above or scroll to the setup section.</p>
+      <p>Choose your desired amount for the direct debit.</p>
     </div>
     <div class="step">
       <div class="step-icon">💷</div>
       <div class="step-number">2</div>
-      <p>Choose your desired amount for the direct debit.</p>
-    </div>
-    <div class="step">
-      <div class="step-icon">🔘</div>
-      <div class="step-number">3</div>
-      <p>Click 'Create Direct Debit' to proceed to payment.</p>
+      <p>Click 'Create Direct Debit' to proceed to payment..</p>
     </div>
     <div class="step">
       <div class="step-icon">💳</div>
-      <div class="step-number">4</div>
+      <div class="step-number">3</div>
       <p>Complete the secure payment process on Stripe.</p>
+    </div>
+    <div class="step">
+      <div class="step-icon">🔘</div>
+      <div class="step-number">4</div>
+      <p>Vote for a GoFundme campaign that will recieve 100% of this months procceeds</p>
     </div>
   </div>
   
@@ -122,17 +124,102 @@
     </div>
     
     </div>
-    <div class="charity-note">
-        <p>100% of the proceeds go to UK-based GoFundMe pages, decided by you on Reddit.</p>
-      </div>
-    <div class="gfm-embed" data-url="https://www.gofundme.com/f/dans-final-chance-to-fight-brain-cancer/widget/large?sharesheet=fundraiser sidebar&attribution_id=sl:30c42732-fb17-489f-a7cd-18b0013ed864"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+    
   </section>
   
  
   
   <!-- End of Setup section -->
 
-      <section class= "FAQ">
+
+
+
+  <!--Start of voting section-->
+  <section class="poll-section" id="poll-section">
+    
+  <div class="container">
+    <h1>Poll</h1>
+    
+    <div class="carousel-container">
+      <button class="carousel-arrow prev" aria-label="Previous cause">❮</button>
+      <div class="carousel" id="causes-carousel">
+        <div class="cause-card" data-cause-id="1">
+          <h3>Cause #1</h3>
+          <div class="cause-card-content">
+            <div class="gfm-embed" data-url="https://www.gofundme.com/f/david-sarcoma-ewing-right-calacneum/widget/large?sharesheet=fundraiser sidebar&attribution_id=sl:5c7ed0cd-74de-487b-bd63-3a6994c8a892"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+          </div>
+          <div class="cause-selection">
+            <input type="radio" id="cause1" name="cause" value="1">
+            <label for="cause1">Select this cause</label>
+          </div>
+        </div>
+        
+        <div class="cause-card" data-cause-id="2">
+          <h3>Cause #2</h3>
+          <div class="cause-card-content">
+            <div class="gfm-embed" data-url="https://www.gofundme.com/f/helpukraine/widget/large?sharesheet=fundraiser sidebar&attribution_id=sl:0122127a-b7cf-4e5e-9998-eeee947a344e"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+          </div>
+          <div class="cause-selection">
+            <input type="radio" id="cause2" name="cause" value="2">
+            <label for="cause2">Select this cause</label>
+          </div>
+        </div>
+        
+        <div class="cause-card" data-cause-id="3">
+          <h3>Cause #3</h3>
+          <div class="cause-card-content">
+            <div class="gfm-embed" data-url="https://www.gofundme.com/f/zoe-woodwards-fight-for-treatment/widget/large?sharesheet=fundraiser sidebar&attribution_id=sl:7dab4913-d57f-4f61-9a68-c3e62c1bd708"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+          </div>
+          <div class="cause-selection">
+            <input type="radio" id="cause3" name="cause" value="3">
+            <label for="cause3">Select this cause</label>
+          </div>
+        </div>
+        
+        <div class="cause-card" data-cause-id="4">
+          <h3>Cause #4</h3>
+          <div class="cause-card-content">
+            <div class="gfm-embed" data-url="https://www.gofundme.com/f/people-vs-elon-campaign/widget/large?sharesheet=fundraiser sidebar&attribution_id=sl:b5dbdddd-8cf1-4263-9abd-53b8ff331bd8"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+          </div>
+          <div class="cause-selection">
+            <input type="radio" id="cause4" name="cause" value="4">
+            <label for="cause4">Select this cause</label>
+          </div>
+        </div>
+        
+        <div class="cause-card" data-cause-id="5">
+          <h3>Cause #5</h3>
+          <div class="cause-card-content">
+            <div class="gfm-embed" data-url="https://www.gofundme.com/f/donate-to-help-harry-and-his-family/widget/large?sharesheet=fundraiser sidebar&attribution_id=sl:d2f2a458-d46d-4ddb-82db-e256a924b5dc"></div><script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+          </div>
+          <div class="cause-selection">
+            <input type="radio" id="cause5" name="cause" value="5">
+            <label for="cause5">Select this cause</label>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-arrow next" aria-label="Next cause">❯</button>
+      
+      <div class="carousel-indicators" id="carousel-indicators"></div>
+    </div>
+    
+    <div class="vote-controls">
+      <button class="submit-button" id="vote-button" disabled>Vote Now</button>
+      <div class="feedback" id="feedback"></div>
+    </div>
+    
+    <div class="vote-counter" id="vote-counter"></div>
+  </div>
+</section>
+
+    <!-- End of Voting section -->
+
+
+
+    <!-- Start of FAQ section -->
+  
+
+      <section class= "FAQ" id="faq-section">
         <div class="faq-container">
           <h1>Frequently Asked Questions</h1>
           
@@ -145,13 +232,12 @@
                 </svg>
               </button>
               <div class="faq-answer">
-                Switch direct debit is designed to help you meet the criteria for various bank switch offers. By setting up  Quick direct debits, you can qualify for promotional offers from banks
-              </div>
+                Switch Debit is a UK-based service that lets you set up small, affordable direct debits (from £0.50) to meet bank switch bonus requirements. All proceeds go to UK GoFundMe causes voted on by users each month.
             </div>
             
             <div class="faq-item">
               <button class="faq-question">
-                When will my direct debit be active? Is it quick to setup
+                How long untill the direct debit is active
                 <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
@@ -163,13 +249,13 @@
             
             <div class="faq-item">
               <button class="faq-question">
-                How long does shipping take?
+                Will banks accept these direct debits for switch bonuses?
                 <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </button>
               <div class="faq-answer">
-                Standard shipping typically takes 3-5 business days. Express shipping options (1-2 business days) are available at checkout for an additional fee.
+                Yes. Our direct debits are set up as valid, recurring payments, which UK banks recognise for meeting switch requirements.
               </div>
             </div>
             
@@ -181,19 +267,19 @@
                 </svg>
               </button>
               <div class="faq-answer">
-                Orders can be modified or canceled within 1 hour of placement. Please contact our customer support team immediately if you need to make changes to your order.
+                Yes. Cancel anytime via your bank’s app/website or by contacting us. No fees or penalties.
               </div>
             </div>
             
             <div class="faq-item">
               <button class="faq-question">
-                What is your return policy?
+                How are the GoFundMe causes chosen?
                 <svg class="faq-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                   <polyline points="6 9 12 15 18 9"></polyline>
                 </svg>
               </button>
               <div class="faq-answer">
-                We offer a 30-day return policy for unused items in their original packaging. Return shipping is free for defective products.
+                Each month, we host a public poll on Reddit/X. The GoFundMe with the most votes receives 100% of that month’s proceeds.
               </div>
             </div>
           </div>
@@ -203,9 +289,43 @@
 
       <!-- End of FAQ section -->
 
+      <!-- Contact Form Section -->
+<div class="cf-contact-container">
+    <div class="cf-contact-header">
+      <h2>Get in Touch</h2>
+      <p>We'd love to hear from you. Fill out the form below.</p>
+    </div>
+    
+    <form id="cf-contactForm" class="cf-contact-form">
+      <div class="cf-form-group">
+        <label for="cf-name">Full Name</label>
+        <input type="text" id="cf-name" placeholder="Your name" required>
+      </div>
+      
+      <div class="cf-form-group">
+        <label for="cf-email">Email Address</label>
+        <input type="email" id="cf-email" placeholder="Your email" required>
+      </div>
+      
+      <div class="cf-form-group">
+        <label for="cf-phone">Phone Number</label>
+        <input type="tel" id="cf-phone" placeholder="Your phone number">
+      </div>
+      
+      <div class="cf-form-group">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" placeholder="How can we help you?" required></textarea>
+      </div>
+      
+      <button type="submit" class="cf-submit-btn">Send Message</button>
+      
+      <div id="cf-formMessage" class="cf-form-message"></div>
+    </form>
+  </div>
+
       <!-- Start of Footer section -->
 
-      <footer class="site-footer">
+      <footer class="site-footer" id="footer-section">
         <div class="footer-container">
           <div class="footer-column">
             <div class="footer-logo">
@@ -213,10 +333,10 @@
               <img src="/images/black switch debit logo.PNG" alt="Switch Debit Logo" class="footer-switch"></div>
             <h4>Company</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Setup</a></li>
-              <li><a href="#">How It Works</a></li>
-              <li><a href="#">Contact us</a></li>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#setup-section">Setup</a></li>
+              <li><a href="#how-it-works-sectoin">How It Works</a></li>
+              <li><a href="#contact">Contact us</a></li>
             </ul>
           </div>
           <div class="footer-column">
@@ -251,4 +371,5 @@
       
 </body>
 <script src="script.js"></script>
+<script src="2script.js"></script>
 </html>
